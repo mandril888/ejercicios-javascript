@@ -5,9 +5,9 @@ Write a function that takes a character
 true if it is a vowel, false otherwise.*/
 
 function isVowel(letra){
-	var tipo = typeOf(letra);
-	if(tipo === string){
+	if(letra === 'a' || 'e' || 'i' || 'o' || 'u'){
 		return true;
+	} else {
+		return false;
 	}
-	return false;
 }
