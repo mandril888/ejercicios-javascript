@@ -5,7 +5,7 @@ Write a function that takes a character
 true if it is a vowel, false otherwise.*/
 
 function isVowel(letra){
-	if(letra === 'a' || 'e' || 'i' || 'o' || 'u'){
+	if(letra === 'a' || letra ==='e' || letra === 'i' || letra === 'o' || letra === 'u'){
 		return true;
 	} else {
 		return false;
