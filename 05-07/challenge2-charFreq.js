@@ -7,6 +7,7 @@ charFreq("abbabcbdbabdbdbabababcbcbab").*/
 
 function charFreq(word){
 	var result = {};
+	var difWords = [];
 
 	for (var i = 0; i < word.length; i++) {
 		word[i]
