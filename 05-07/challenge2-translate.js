@@ -23,3 +23,24 @@ function translate(sentence){
 	result = union.join('');
 	return result;
 }
+
+
+function translateVariant( text ){
+​
+    var numCharacters = text.length;
+    var currentCharacter;
+    var translatedText = "";
+​
+    for (var i=0; i<numCharacters; i++) {
+        currentCharacter = text[i];
+        if ( "aeiou ".indexOf(currentCharacter) !== -1 ) {
+            translatedText += currentCharacter;
+        }
+        else {
+            translatedText += currentCharacter + "o" + currentCharacter;   
+        }
+    }
+​
+    return translatedText;
+​
+}

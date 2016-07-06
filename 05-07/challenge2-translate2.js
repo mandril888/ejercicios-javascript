@@ -11,11 +11,13 @@ function translate2(sentence){
 	var obj = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"};
 	var sentenceDivision = sentence.split(' ');
 	var translate = [];
+	var transfArr = [];
 
 	for (var i = 0; i < sentenceDivision.length; i++) {
 		for (var prop in obj){
 			if (sentenceDivision[i] === prop) {
-				translate = obj['prop'].push();
+				transfArr[i] = obj.prop;
+				translate = transfArr.push();
 			}
 		}
 	}
