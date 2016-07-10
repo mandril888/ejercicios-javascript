@@ -5,8 +5,8 @@ word, phrase, or sequence that reads the same backward as forward, e.g., madam o
 
 
 function isPalindrome( text ){
-	var aSplitedWords = text.split(' ');
-	var sTextWhithoutSpaces = aSplitedWords.join('');
+	var aSplittedWords = text.split(' ');
+	var sTextWhithoutSpaces = aSplittedWords.join('');
 	var aSplitedLetters = sTextWhithoutSpaces.split('');
 	var aTextReversed = aSplitedLetters.reverse();
 	var sTextReversed = aTextReversed.join('');
