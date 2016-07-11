@@ -6,21 +6,19 @@ in the following fashion {"merry":"god", "christmas":"jul",
 and use it to translate your Christmas cards from English
 into Swedish.*/
 
-function translate2(sentence){
+function translate2( text ){
 	var result;
-	var obj = {"merry":"god", "christmas":"jul", "and":"och", "happy":"gott", "new":"nytt", "year":"år"};
-	var sentenceDivision = sentence.split(' ');
+	var obj = {merry:"god", christmas:"jul", and:"och", happy:"gott", new:"nytt", year:"år"};
+	var textDivision = text.split(' ');
 	var translate = [];
-	var transfArr = [];
 
-	for (var i = 0; i < sentenceDivision.length; i++) {
+	for (var i = 0; i < textDivision.length; i++) {
 		for (var prop in obj){
-			if (sentenceDivision[i] === prop) {
-				transfArr[i] = obj.prop;
-				translate = transfArr.push();
+			if (textDivision[i] === prop) {
+				translate.push(obj[prop]);
 			}
 		}
 	}
-	result = translate.join(' ');
-	return result;	
+
+	return translate.join(' ');	
 }
